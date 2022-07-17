@@ -24,7 +24,7 @@
             let mate_ii = document.getElementById("puntaje_mateii").value * document.getElementById("porcentaje_mateii").value/100;
             let ciencias = document.getElementById("puntaje_ciencias").value * document.getElementById("porcentaje_ciencias").value/100;
             let historia = document.getElementById("puntaje_historia").value * document.getElementById("porcentaje_historia").value/100;
-            document.getElementById("puntaje").innerHTML = lenguaje + mate_i + mate_ii + ciencias + historia
+            document.getElementById("puntaje").innerHTML = nem + ranking +lenguaje + mate_i + mate_ii + ciencias + historia;
         }
 
         function transformar() {
@@ -42,8 +42,8 @@
         <li>
             <label for = " name "> NEM: </label>
             <div>
-                <input type = "number" id = "puntaje_NEM" size="6" min="100" max="1000">
-                <input type = "number" id = "porcentaje_NEM" size="4" min="0" max="100" placeholder="%">
+                <input type = "number" id = "puntaje_nem" size="6" min="100" max="1000">
+                <input type = "number" id = "porcentaje_nem" size="4" min="0" max="100" placeholder="%">
             </div>
         </li>
         <li>
