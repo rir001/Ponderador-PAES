@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Ponderador PAES </title>
+
+    <style>
+        ul {
+            width: 300px;
+        }
+        li {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+    </style>
+
+    <script>
+        function calcular() {
+            let lenguaje = document.getElementById("puntaje_lenguaje").value * document.getElementById("porcentaje_lenguaje").value/100;
+            let mate_i = document.getElementById("puntaje_matei").value * document.getElementById("porcentaje_matei").value/100;
+            let mate_ii = document.getElementById("puntaje_mateii").value * document.getElementById("porcentaje_mateii").value/100;
+            let ciencias = document.getElementById("puntaje_ciencias").value * document.getElementById("porcentaje_ciencias").value/100;
+            let historia = document.getElementById("puntaje_historia").value * document.getElementById("porcentaje_historia").value/100;
+            document.getElementById("puntaje").innerHTML = lenguaje + mate_i + mate_ii + ciencias + historia
+        }
+    </script>
+</head>
+<body>
+    <ul>
+        <li>
+            <p> Prueba </p>
+            <p> Puntaje % </p>
+        </li>
+        <li>
+            <label for = " name "> Lenguaje: </label>
+            <div>
+                <input type = "number" id = "puntaje_lenguaje" size="6" min="100" max="1000">
+                <input type = "number" id = "porcentaje_lenguaje" size="4" min="0" max="100" placeholder="%">
+            </div>
+        </li>
+        <li>
+            <label for = " name "> Matematica I: </label>
+            <div>
+                <input type = "number" id = "puntaje_matei" size="6" min="100" max="1000">
+                <input type = "number" id = "porcentaje_matei" size="4" min="0" max="100" placeholder="%">
+            </div>
+        </li>
+        <li>
+            <label for = " name "> Matematica II: </label>
+            <div>
+                <input type = "number" id = "puntaje_mateii" size="6" min="100" max="1000">
+                <input type = "number" id = "porcentaje_mateii" size="4" min="0" max="100" placeholder="%">
+            </div>
+        </li>
+        <li>
+            <label for = " name "> Ciencias: </label>
+            <div>
+                <input type = "number" id = "puntaje_ciencias" size="6" min="100" max="1000">
+                <input type = "number" id = "porcentaje_ciencias" size="4" min="0" max="100" placeholder="%">
+            </div>
+        </li>
+        <li>
+            <label for = " name "> Historia: </label>
+            <div>
+                <input type = "number" id = "puntaje_historia" size="6" min="100" max="1000">
+                <input type = "number" id = "porcentaje_historia" size="4" min="0" max="100" placeholder="%">
+            </div>
+        </li>
+
+        <li>
+            <label> Puntaje ponderado: </label>
+            <div id = "puntaje"> sos </div>
+        </li>
+    </ul>
+
+    <button type = "button" onclick="calcular()"> Calcular! </button>
+
+
+</body>
+</html>
