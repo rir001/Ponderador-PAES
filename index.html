@@ -17,12 +17,19 @@
 
     <script>
         function calcular() {
+            let nem = document.getElementById("puntaje_nem").value * document.getElementById("porcentaje_nem").value/100;
+            let ranking = document.getElementById("puntaje_ranking").value * document.getElementById("porcentaje_ranking").value/100;
             let lenguaje = document.getElementById("puntaje_lenguaje").value * document.getElementById("porcentaje_lenguaje").value/100;
             let mate_i = document.getElementById("puntaje_matei").value * document.getElementById("porcentaje_matei").value/100;
             let mate_ii = document.getElementById("puntaje_mateii").value * document.getElementById("porcentaje_mateii").value/100;
             let ciencias = document.getElementById("puntaje_ciencias").value * document.getElementById("porcentaje_ciencias").value/100;
             let historia = document.getElementById("puntaje_historia").value * document.getElementById("porcentaje_historia").value/100;
             document.getElementById("puntaje").innerHTML = lenguaje + mate_i + mate_ii + ciencias + historia
+        }
+
+        function transformar() {
+            let psu = (document.getElementById("psu").value - 150) * 9 / 7 + 100
+            document.getElementById("puntaje_paes").innerHTML = psu
         }
     </script>
 </head>
@@ -31,6 +38,20 @@
         <li>
             <p> Prueba </p>
             <p> Puntaje % </p>
+        </li>
+        <li>
+            <label for = " name "> NEM: </label>
+            <div>
+                <input type = "number" id = "puntaje_NEM" size="6" min="100" max="1000">
+                <input type = "number" id = "porcentaje_NEM" size="4" min="0" max="100" placeholder="%">
+            </div>
+        </li>
+        <li>
+            <label for = " name "> Ranking: </label>
+            <div>
+                <input type = "number" id = "puntaje_ranking" size="6" min="100" max="1000">
+                <input type = "number" id = "porcentaje_ranking" size="4" min="0" max="100" placeholder="%">
+            </div>
         </li>
         <li>
             <label for = " name "> Lenguaje: </label>
@@ -75,6 +96,18 @@
     </ul>
 
     <button type = "button" onclick="calcular()"> Calcular! </button>
+
+    <ul>
+        <li>
+            <label> Puntaje PSU: </label>
+            <div>
+                <input type = "number" id = "psu" size="6" min="150" max="850">
+                <div id = "puntaje_paes"> sos </div>
+            </div>
+        </li>
+    </ul>
+
+    <button type = "button" onclick="transformar()"> Transformar! </button>
 
 
 </body>
