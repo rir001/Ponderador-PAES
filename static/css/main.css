@@ -1,0 +1,64 @@
+*
+{
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+
+html
+{
+    min-height:100%;
+    background: var(--back);
+    color: var(--text);
+}
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.root
+{
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--container);
+    border-radius: 25px;
+
+    padding: 50px;
+}
+
+.menu
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+
+.ponderador
+{
+    padding: 20px;
+}
+
+.ponderador ul
+{
+    width: 100%;
+}
+
+.ponderador ul li
+{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}

@@ -1,0 +1,21 @@
+@media (prefers-color-scheme: dark)
+{
+    :root
+    {
+        --back: rgb(0, 0, 0);
+        --container: rgb(15, 15, 15);
+        --text: rgb(200, 200, 200);
+    }
+
+}
+
+@media (prefers-color-scheme: light)
+{
+    :root
+    {
+        --back: rgb(240, 240, 240);
+        --container: rgb(220, 220, 220);
+        --text: rgb(45, 45, 45);
+    }
+
+}

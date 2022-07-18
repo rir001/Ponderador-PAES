@@ -1,0 +1,99 @@
+var universidades =
+{
+    "Universidad Catolica":
+    {
+        "Ingeniera":
+        {
+            "porcentaje":
+            {
+                "nem": 20,
+                "ranking": 20,
+                "lenguaje": 10,
+                "matematica i": 35,
+                "matematica ii": 0,
+                "ciencias": 15,
+                "historia": 0,
+            },
+            "corte": 756
+        },
+        "Medicina":
+        {
+            "porcentaje":
+            {
+                "nem": 20,
+                "ranking": 20,
+                "lenguaje": 15,
+                "matematica i": 20,
+                "matematica ii": 0,
+                "ciencias": 25,
+                "historia": 0,
+            },
+            "corte": 804
+        },
+    },
+
+    "Universidad de Santiago":
+    {
+        "Ingeniera Civil en Telematica":
+        {
+            "porcentaje":
+            {
+                "nem": 25,
+                "ranking": 25,
+                "lenguaje": 10,
+                "matematica i": 30,
+                "matematica ii": 0,
+                "ciencias": 10,
+                "historia": 0,
+            },
+            "corte": 602
+        },
+        "Medicina":
+        {
+            "porcentaje":
+            {
+                "nem": 10,
+                "ranking": 40,
+                "lenguaje": 15,
+                "matematica i": 15,
+                "matematica ii": 0,
+                "ciencias": 20,
+                "historia": 0,
+            },
+            "corte": 781
+        },
+    },
+
+    "Universidad de Chile":
+    {
+        "Ingeniera Civil Electrica":
+        {
+            "porcentaje":
+            {
+                "nem": 10,
+                "ranking": 20,
+                "lenguaje": 10,
+                "matematica i": 45,
+                "matematica ii": 0,
+                "ciencias": 15,
+                "historia": 0,
+            },
+            "corte": 602
+        },
+        "Medicina":
+        {
+            "porcentaje":
+            {
+                "nem": 10,
+                "ranking": 20,
+                "lenguaje": 10,
+                "matematica i": 30,
+                "matematica ii": 0,
+                "ciencias": 30,
+                "historia": 0,
+            },
+            "corte": 781
+        },
+    },
+
+}
